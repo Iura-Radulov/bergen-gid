@@ -1,6 +1,7 @@
 // import { Link, animateScroll as scroll } from 'react-scroll';
 // import upArrow from '../icons/up-arrow.png';
 // import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 // import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -23,20 +24,20 @@ export default function Navigation() {
     <header style={styles.header}>
       <Container className="d-flex">
         <Col sm={6}>
-          <Nav.Link href="/" style={{ fontSize: 30 }}>
+          <Link to="/" style={{ fontSize: 30 }}>
             Виталий Орлович
-          </Nav.Link>
+          </Link>
           <p>Частный гид в Бергене</p>
         </Col>
         <Col sm={6}>
           <Nav className="me-auto" style={{ fontSize: 20 }}>
-            <Nav.Link activeClass="active" href="about">
+            <NavLink activeClass="active" className="mr-3" to="about">
               О себе
-            </Nav.Link>
-            <Nav.Link activeClass="active" href="excursion">
+            </NavLink>
+            <NavLink activeClass="active" to="excursion">
               Экскурсии
-            </Nav.Link>
-            <Nav.Link href="contact">Контакты</Nav.Link>
+            </NavLink>
+            <NavLink to="contact">Контакты</NavLink>
             <Nav.Link href="tel:+4796662700">+4796662700 {phoneIcon}</Nav.Link>
             {/* <Button variant="primary">Написать сообщение</Button>{' '} */}
           </Nav>
