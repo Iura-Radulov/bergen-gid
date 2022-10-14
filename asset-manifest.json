@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/bergen-gid/static/css/main.608d5663.css",
-    "main.js": "/bergen-gid/static/js/main.bc3d910c.js",
+    "main.js": "/bergen-gid/static/js/main.f74cb088.js",
     "index.html": "/bergen-gid/index.html",
     "main.608d5663.css.map": "/bergen-gid/static/css/main.608d5663.css.map",
-    "main.bc3d910c.js.map": "/bergen-gid/static/js/main.bc3d910c.js.map"
+    "main.f74cb088.js.map": "/bergen-gid/static/js/main.f74cb088.js.map"
   },
   "entrypoints": [
     "static/css/main.608d5663.css",
-    "static/js/main.bc3d910c.js"
+    "static/js/main.f74cb088.js"
   ]
 }
