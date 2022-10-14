@@ -1,0 +1,5 @@
+import Container from 'react-bootstrap/Container';
+
+export default function Contacts() {
+  return <Container>Contacts</Container>;
+}
