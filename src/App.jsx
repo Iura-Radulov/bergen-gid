@@ -10,6 +10,7 @@ import About from './pages/About';
 import Navigation from './components/Navigation';
 import Excursion from 'pages/Excursion';
 import Contact from 'pages/Contact';
+import PrivateTour from 'components/PrivateTour';
 
 export const App = () => {
   return (
@@ -24,7 +25,11 @@ export const App = () => {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/excursion" element={<Excursion />} />
+          <Route path="/excursion" element={<Excursion />}>
+            <Route path="private-tour" element={<PrivateTour />} />
+            <Route path="farm" element={<Excursion />} />
+            <Route path="waterfalls" element={<Excursion />} />
+          </Route>
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Home />} />
         </Routes>

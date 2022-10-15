@@ -1,5 +1,5 @@
 // import { Link, animateScroll as scroll } from 'react-scroll';
-// import upArrow from '../icons/up-arrow.png';
+import fon from '../images/fon.jpg';
 // import { Link } from 'react-router-dom';
 import { NavLink, Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
@@ -7,14 +7,18 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { phoneIcon } from 'icons/svgIcon/svgIcons';
+import { phoneIcon, mailIcon } from 'icons/svgIcon/svgIcons';
 
 const styles = {
   header: {
     alignItems: 'center',
+    height: 300,
     // borderBottom: '1px solid #2A363B',
     padding: 20,
-    backgroundColor: '#f2f2f2',
+    // backgroundColor: '#f2f2f2',
+    backgroundImage: `url(${fon})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
     color: '#2A363B',
   },
 };
@@ -22,24 +26,35 @@ const styles = {
 export default function Navigation() {
   return (
     <header style={styles.header}>
-      <Container className="d-flex">
-        <Col sm={6}>
-          <Link to="/" style={{ fontSize: 30 }}>
+      <Container fluid className="d-flex">
+        <Col className="d-none d-md-block text-white pt-4 px-5">
+          <Link to="/" className="text-white fs-1">
             Виталий Орлович
           </Link>
           <p>Частный гид в Бергене</p>
         </Col>
-        <Col sm={6}>
-          <Nav className="me-auto" style={{ fontSize: 20 }}>
-            <NavLink activeClass="active" className="mr-3" to="about">
+        <Col>
+          <Nav className="me-auto pt-4 fs-4 justify-content-end align-items-start">
+            <NavLink className="text-white" to="about">
               О себе
             </NavLink>
-            <NavLink activeClass="active" to="excursion">
+            <NavLink className="ms-3 text-white" to="excursion">
               Экскурсии
             </NavLink>
-            <NavLink to="contact">Контакты</NavLink>
-            <Nav.Link href="tel:+4796662700">+4796662700 {phoneIcon}</Nav.Link>
-            {/* <Button variant="primary">Написать сообщение</Button>{' '} */}
+            <NavLink to="contact" className="ms-3 text-white">
+              Контакты
+            </NavLink>
+            <div>
+              <Nav.Link href="tel:+4796662700" className="ms-4 text-white ">
+                {phoneIcon} +4796662700
+              </Nav.Link>
+              <Nav.Link
+                href="mailto:vianorway.tour@gmail.com"
+                className="ms-4 text-white d-none d-md-block"
+              >
+                {mailIcon} vianorway.tour@gmail.com
+              </Nav.Link>
+            </div>
           </Nav>
         </Col>
       </Container>
