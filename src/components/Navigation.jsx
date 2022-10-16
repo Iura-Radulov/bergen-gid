@@ -16,7 +16,11 @@ const styles = {
     // borderBottom: '1px solid #2A363B',
     padding: 20,
     // backgroundColor: '#f2f2f2',
-    backgroundImage: `url(${fon})`,
+    backgroundImage: `linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ), url(${fon})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     color: '#2A363B',
@@ -41,11 +45,17 @@ export default function Navigation() {
             <NavLink className="ms-3 text-white" to="excursion">
               Экскурсии
             </NavLink>
+            <NavLink className="ms-3 text-white" to="services">
+              Услуги
+            </NavLink>
             <NavLink to="contact" className="ms-3 text-white">
               Контакты
             </NavLink>
             <div>
-              <Nav.Link href="tel:+4796662700" className="ms-4 text-white ">
+              <Nav.Link
+                href="tel:+4796662700"
+                className="ms-4 pt-0 text-white "
+              >
                 {phoneIcon} +4796662700
               </Nav.Link>
               <Nav.Link

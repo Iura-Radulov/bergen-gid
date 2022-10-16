@@ -4,13 +4,15 @@ import { Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import About from './pages/About';
 
-// import Contact from './Contact';
-// import Experience from './Experience';
-// import Work from './Work';
 import Navigation from './components/Navigation';
 import Excursion from 'pages/Excursion';
 import Contact from 'pages/Contact';
-import PrivateTour from 'components/PrivateTour';
+import PrivateTour from 'pages/PrivateTour';
+import Services from 'pages/Services';
+import Transfer from 'pages/Transfer';
+import Farm from 'pages/Farm';
+import Waterfalls from 'pages/Waterfalls';
+import Footer from 'components/Footer';
 
 export const App = () => {
   return (
@@ -27,13 +29,17 @@ export const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/excursion" element={<Excursion />}>
             <Route path="private-tour" element={<PrivateTour />} />
-            <Route path="farm" element={<Excursion />} />
-            <Route path="waterfalls" element={<Excursion />} />
+            <Route path="farm" element={<Farm />} />
+            <Route path="waterfalls" element={<Waterfalls />} />
+          </Route>
+          <Route path="/services" element={<Services />}>
+            <Route path="transfer" element={<Transfer />} />
           </Route>
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </Suspense>
+      <Footer />
     </>
   );
 };
