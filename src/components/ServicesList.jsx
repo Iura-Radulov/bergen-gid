@@ -7,7 +7,7 @@ export default function ServicesList() {
       <li>
         <Link to="/services/transfer">
           <img src={img1} style={{ width: 350 }} alt="image1" />
-          <p style={{ width: 300 }}>
+          <p style={{ width: 300 }} className="mt-2">
             Трансфер в/из аэропорта г.Берген, Трансфер Осло-Берген, Берген-Осло
           </p>
         </Link>

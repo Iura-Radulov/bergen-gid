@@ -6,11 +6,14 @@ import Button from 'react-bootstrap/Button';
 
 export default function Home() {
   return (
-    <div className="bg-success bg-opacity-25">
+    <div className="bg-success bg-opacity-10">
       <Container className="bg-light px-0">
-        <h2 className="p-5 text-center">
+        <h1
+          className="p-5 text-center text-black-50 fw-bold"
+          style={{ fontFamily: 'Apple Chancery', fontStyle: 'italic' }}
+        >
           Индивидуальные экскурсии по Норвегии
-        </h2>
+        </h1>
 
         <div
           style={{
@@ -26,20 +29,23 @@ export default function Home() {
             position: 'relative',
           }}
         >
-          <h3 className="p-4 text-center text-white position-absolute top-50 start-50 translate-middle w-75">
+          <h3 className="d-none d-md-block d-lg-fs-3 text-center text-white position-absolute top-50 start-50 translate-middle w-75">
             Вы когда-нибудь бывали в сказке? Нет? А хотите? Тогда приезжайте к
             нам в Норвегию! А именно – в Берген. Город всемирного наследия.
-            Город-ворота норвежских фьордов. Город, чья набережная знаменита на
-            весь мир и находится под охраной ЮНЕСКО. Отсюда, из Бергена и
-            начинаются все наши экскурсии в мир фантастической норвежской
-            природы. Мы покажем вам настоящую Норвегию!!!
+            Город-ворота норвежских фьордов. Отсюда, из Бергена и начинаются все
+            наши экскурсии в мир фантастической норвежской природы. Мы покажем
+            вам настоящую Норвегию!!!
           </h3>
+          <p className="d-block d-md-none  fs-4 d-lg-fs-3 text-center text-white position-absolute top-50 start-50 translate-middle w-75">
+            Вы когда-нибудь бывали в сказке? Нет? А хотите? Тогда приезжайте к
+            нам в Норвегию! А именно – в Берген. Город всемирного наследия.
+          </p>
           <Button
             variant="primary"
             size="lg"
             active
             className="position-absolute start-50 translate-middle"
-            style={{ bottom: 100 }}
+            style={{ bottom: 80 }}
           >
             Заказать экскурсию
           </Button>

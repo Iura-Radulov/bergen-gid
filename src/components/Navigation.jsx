@@ -32,10 +32,10 @@ export default function Navigation() {
     <header style={styles.header}>
       <Container fluid className="d-flex">
         <Col className="d-none d-md-block text-white pt-4 px-5">
-          <Link to="/" className="text-white fs-1">
+          <Link to="/" className="text-white fs-1 fst-italic">
             Виталий Орлович
           </Link>
-          <p>Частный гид в Бергене</p>
+          <p className="fst-italic">Частный гид в Бергене</p>
         </Col>
         <Col>
           <Nav className="me-auto pt-4 fs-4 justify-content-end align-items-start">

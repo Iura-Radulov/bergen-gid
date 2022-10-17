@@ -5,11 +5,11 @@ import img3 from '../images/waterfalls/waterfalls1.jpg';
 
 export default function ExcursionList() {
   return (
-    <ul className="d-flex justify-content-around">
+    <ul className="d-block d-lg-flex justify-content-around">
       <li>
         <Link to="/excursion/farm">
           <img src={img1} style={{ width: 350 }} alt="image1" />
-          <p style={{ width: 300 }}>
+          <p style={{ width: 300 }} className="mt-2">
             Kjeåsen(Козлиный холм). Ферма 17-го века и немного хайкинга
           </p>
         </Link>
@@ -17,13 +17,13 @@ export default function ExcursionList() {
       <li>
         <Link to="/excursion/private-tour">
           <img src={img2} style={{ width: 350 }} alt="image1" />
-          <p>Индивидуальная экскурсия по интересам</p>
+          <p className="mt-2">Индивидуальная экскурсия по интересам</p>
         </Link>
       </li>
       <li>
         <Link to="/excursion/waterfalls">
           <img src={img3} style={{ width: 350 }} alt="image1" />
-          <p>Фьорды и водопады (Авторский)</p>
+          <p className="mt-2">Фьорды и водопады (Авторский)</p>
         </Link>
       </li>
     </ul>
