@@ -5,7 +5,7 @@ export default function ServicesList() {
   return (
     <ul className="d-flex justify-content-around">
       <li>
-        <Link to="/services/transfer">
+        <Link to="/transfer">
           <img src={img1} style={{ width: 350 }} alt="image1" />
           <p style={{ width: 300 }} className="mt-2 link">
             Трансфер в/из аэропорта г.Берген, Трансфер Осло-Берген, Берген-Осло

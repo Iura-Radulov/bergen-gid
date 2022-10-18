@@ -27,14 +27,14 @@ export const App = () => {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/excursion" element={<Excursion />}>
-            <Route path="private-tour" element={<PrivateTour />} />
-            <Route path="farm" element={<Farm />} />
-            <Route path="waterfalls" element={<Waterfalls />} />
-          </Route>
-          <Route path="/services" element={<Services />}>
-            <Route path="transfer" element={<Transfer />} />
-          </Route>
+          <Route path="/excursion" element={<Excursion />} />
+          <Route path="/private-tour" element={<PrivateTour />} />
+          <Route path="/farm" element={<Farm />} />
+          <Route path="/waterfalls" element={<Waterfalls />} />
+
+          <Route path="/services" element={<Services />} />
+          <Route path="/transfer" element={<Transfer />} />
+
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Home />} />
         </Routes>

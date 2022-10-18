@@ -7,7 +7,7 @@ export default function ExcursionList() {
   return (
     <ul className="d-block d-lg-flex justify-content-around">
       <li>
-        <Link to="/excursion/farm">
+        <Link to="/farm">
           <img src={img1} style={{ width: 350 }} alt="image1" />
           <p style={{ width: 300 }} className="mt-2 link">
             Kjeåsen(Козлиный холм). Ферма 17-го века и немного хайкинга
@@ -15,13 +15,13 @@ export default function ExcursionList() {
         </Link>
       </li>
       <li>
-        <Link to="/excursion/private-tour">
+        <Link to="/private-tour">
           <img src={img2} style={{ width: 350 }} alt="image1" />
           <p className="mt-2 link">Индивидуальная экскурсия по интересам</p>
         </Link>
       </li>
       <li>
-        <Link to="/excursion/waterfalls">
+        <Link to="/waterfalls">
           <img src={img3} style={{ width: 350 }} alt="image1" />
           <p className="mt-2 link">Фьорды и водопады (Авторский)</p>
         </Link>

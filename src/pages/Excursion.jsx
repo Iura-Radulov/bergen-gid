@@ -1,7 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import ExcursionList from 'components/ExcursionList';
 import { Suspense } from 'react';
-import { Outlet } from 'react-router-dom';
 
 export default function Excursion() {
   return (
@@ -9,8 +8,6 @@ export default function Excursion() {
       <h2 className="p-5 text-center">Экскурсии</h2>
       <Suspense fallback={<div>Loading subpage...</div>}>
         <ExcursionList />
-
-        <Outlet />
       </Suspense>
     </Container>
   );
