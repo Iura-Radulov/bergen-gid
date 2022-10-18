@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bergen-gid/static/css/main.e959eaa9.css",
-    "main.js": "/bergen-gid/static/js/main.be6b1652.js",
+    "main.css": "/bergen-gid/static/css/main.9794480f.css",
+    "main.js": "/bergen-gid/static/js/main.dad4e9a1.js",
     "static/media/Private-tour4.jpg": "/bergen-gid/static/media/Private-tour4.a4b0b66df9becc6d549e.jpg",
     "static/media/17-century-farm1.jpg": "/bergen-gid/static/media/17-century-farm1.d4cf2de227d2cf87bb63.jpg",
     "static/media/waterfalls1.jpg": "/bergen-gid/static/media/waterfalls1.de1b49b85ba78bca0a7e.jpg",
@@ -10,11 +10,11 @@
     "static/media/fon.jpg": "/bergen-gid/static/media/fon.d42f7980fd503b868c20.jpg",
     "static/media/gid.jpg": "/bergen-gid/static/media/gid.8d811df4107317ca9b3b.jpg",
     "index.html": "/bergen-gid/index.html",
-    "main.e959eaa9.css.map": "/bergen-gid/static/css/main.e959eaa9.css.map",
-    "main.be6b1652.js.map": "/bergen-gid/static/js/main.be6b1652.js.map"
+    "main.9794480f.css.map": "/bergen-gid/static/css/main.9794480f.css.map",
+    "main.dad4e9a1.js.map": "/bergen-gid/static/js/main.dad4e9a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e959eaa9.css",
-    "static/js/main.be6b1652.js"
+    "static/css/main.9794480f.css",
+    "static/js/main.dad4e9a1.js"
   ]
 }
