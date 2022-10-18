@@ -3,7 +3,7 @@ import fon from '../images/fon.jpg';
 // import { Link } from 'react-router-dom';
 import { NavLink, Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
-// import Button from 'react-bootstrap/Button';
+import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -13,9 +13,7 @@ const styles = {
   header: {
     alignItems: 'center',
     height: 300,
-    // borderBottom: '1px solid #2A363B',
     padding: 20,
-    // backgroundColor: '#f2f2f2',
     backgroundImage: `linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -26,6 +24,12 @@ const styles = {
     color: '#2A363B',
   },
 };
+
+const MenuLink = styled(NavLink)`
+  &.active {
+    color: #2196f3;
+  }
+`;
 
 export default function Navigation() {
   return (
@@ -39,28 +43,25 @@ export default function Navigation() {
         </Col>
         <Col>
           <Nav className="me-auto pt-4 fs-4 justify-content-end align-items-start">
-            <NavLink className="text-white" to="about">
+            <MenuLink className="link-white" to="about">
               О себе
-            </NavLink>
-            <NavLink className="ms-3 text-white" to="excursion">
+            </MenuLink>
+            <MenuLink className="ms-3 link-white" to="excursion">
               Экскурсии
-            </NavLink>
-            <NavLink className="ms-3 text-white" to="services">
+            </MenuLink>
+            <MenuLink className="ms-3 link-white" to="services">
               Услуги
-            </NavLink>
-            <NavLink to="contact" className="ms-3 text-white">
+            </MenuLink>
+            <MenuLink to="contact" className="ms-3 link-white">
               Контакты
-            </NavLink>
+            </MenuLink>
             <div>
-              <Nav.Link
-                href="tel:+4796662700"
-                className="ms-4 pt-0 text-white "
-              >
+              <Nav.Link href="tel:+4796662700" className="ms-4 pt-0 link-white">
                 {phoneIcon} +4796662700
               </Nav.Link>
               <Nav.Link
                 href="mailto:vianorway.tour@gmail.com"
-                className="ms-4 text-white d-none d-md-block"
+                className="ms-4 link-white d-none d-md-block"
               >
                 {mailIcon} vianorway.tour@gmail.com
               </Nav.Link>

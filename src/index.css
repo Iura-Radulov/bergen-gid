@@ -17,10 +17,13 @@ body {
 
 a:hover {
   cursor: pointer;
+  color: #0a58ca;
 }
 
 a {
   text-decoration: none;
+  /* color: black;
+  opacity: 0.75; */
 }
 
 li {
@@ -28,4 +31,21 @@ li {
 }
 ul {
   margin-bottom: 0;
+}
+
+.link {
+  color: black;
+  opacity: 0.75;
+}
+
+.link:hover {
+  color: #0a58ca;
+}
+
+.link-white {
+  color: white;
+}
+
+.link-white:hover {
+  color: #e4a36f;
 }
