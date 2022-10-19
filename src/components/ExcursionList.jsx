@@ -5,7 +5,7 @@ import img3 from '../images/waterfalls/waterfalls1.jpg';
 
 export default function ExcursionList() {
   return (
-    <ul className="d-block d-lg-flex justify-content-around">
+    <ul className="excursions d-flex justify-content-around">
       <li>
         <Link to="/farm">
           <img src={img1} style={{ width: 350 }} alt="image1" />

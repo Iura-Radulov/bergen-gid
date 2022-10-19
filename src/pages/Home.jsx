@@ -29,7 +29,7 @@ export default function Home() {
             position: 'relative',
           }}
         >
-          <h3 className="d-none d-md-block d-lg-fs-3 text-center text-white position-absolute top-50 start-50 translate-middle w-75">
+          <h3 className="d-none d-md-block d-lg-fs-3 text-center lh-base text-white position-absolute top-50 start-50 translate-middle w-75">
             Вы когда-нибудь бывали в сказке? Нет? А хотите? Тогда приезжайте к
             нам в Норвегию! А именно – в Берген. Город всемирного наследия.
             Город-ворота норвежских фьордов. Отсюда, из Бергена и начинаются все
