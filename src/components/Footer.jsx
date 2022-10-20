@@ -2,6 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import { telegramIcon, whatsappIcon, mailIcon } from 'icons/svgIcon/svgIcons';
 import Nav from 'react-bootstrap/Nav';
+import logo from 'images/logo_2.png';
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
       <Container className="d-flex pt-5 justify-content-around">
         <div>
           <Link to="/" className="link-white fs-3 fst-italic">
-            Виталий Орлович
+            <img className="logo" src={logo} alt="" />
           </Link>
           <p className="fst-italic text-white mt-2">Частный гид</p>
           <p className="fst-italic text-white mt-2">Берген, Норвегия</p>
