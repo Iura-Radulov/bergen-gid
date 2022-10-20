@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bergen-gid/static/css/main.e27494bb.css",
-    "main.js": "/bergen-gid/static/js/main.aa5f91b5.js",
+    "main.css": "/bergen-gid/static/css/main.03ee2b50.css",
+    "main.js": "/bergen-gid/static/js/main.73d0ec2c.js",
     "static/media/17-century-farm4.jpg": "/bergen-gid/static/media/17-century-farm4.29039012ec6c5cb76cba.jpg",
     "static/media/Private-tour4.jpg": "/bergen-gid/static/media/Private-tour4.a4b0b66df9becc6d549e.jpg",
     "static/media/17-century-farm5.jpg": "/bergen-gid/static/media/17-century-farm5.c2bec5eabeed2d87806b.jpg",
@@ -11,14 +11,15 @@
     "static/media/17-century-farm2.jpg": "/bergen-gid/static/media/17-century-farm2.851e56ef4c1d4be75c8c.jpg",
     "static/media/transfer.jpg": "/bergen-gid/static/media/transfer.ac8224e73aec1497180b.jpg",
     "static/media/Private-tour1.jpg": "/bergen-gid/static/media/Private-tour1.880ad002bf4755b4c5cc.jpg",
-    "static/media/fon.jpg": "/bergen-gid/static/media/fon.d42f7980fd503b868c20.jpg",
+    "static/media/logo_1.png": "/bergen-gid/static/media/logo_1.c44cbc1be6acc866e4a1.png",
     "static/media/gid.jpg": "/bergen-gid/static/media/gid.8d811df4107317ca9b3b.jpg",
+    "static/media/fon2.webp": "/bergen-gid/static/media/fon2.4f63f16d2374182d69c6.webp",
     "index.html": "/bergen-gid/index.html",
-    "main.e27494bb.css.map": "/bergen-gid/static/css/main.e27494bb.css.map",
-    "main.aa5f91b5.js.map": "/bergen-gid/static/js/main.aa5f91b5.js.map"
+    "main.03ee2b50.css.map": "/bergen-gid/static/css/main.03ee2b50.css.map",
+    "main.73d0ec2c.js.map": "/bergen-gid/static/js/main.73d0ec2c.js.map"
   },
   "entrypoints": [
-    "static/css/main.e27494bb.css",
-    "static/js/main.aa5f91b5.js"
+    "static/css/main.03ee2b50.css",
+    "static/js/main.73d0ec2c.js"
   ]
 }
