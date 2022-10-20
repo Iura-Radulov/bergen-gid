@@ -1,10 +1,15 @@
 import Container from 'react-bootstrap/Container';
 import fon from '../images/Private-tour/Private-tour4.jpg';
+// import fon2 from 'images/aerial-view.webp';
 import ExcursionList from 'components/ExcursionList';
 import ServicesList from 'components/ServicesList';
 import Button from 'react-bootstrap/Button';
+import CenteredModal from 'utils/modal';
+import { useState } from 'react';
 
 export default function Home() {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <div className="bg-success bg-opacity-10">
       <Container className="bg-light px-0">
@@ -40,15 +45,22 @@ export default function Home() {
             Вы когда-нибудь бывали в сказке? Нет? А хотите? Тогда приезжайте к
             нам в Норвегию! А именно – в Берген. Город всемирного наследия.
           </p>
-          <Button
-            variant="primary"
-            size="lg"
-            active
-            className="position-absolute start-50 translate-middle"
-            style={{ bottom: 80 }}
-          >
-            Заказать экскурсию
-          </Button>
+          <div>
+            <Button
+              variant="primary"
+              size="lg"
+              active
+              className="position-absolute start-50 translate-middle"
+              style={{ bottom: 80 }}
+              onClick={() => setModalShow(true)}
+            >
+              Заказать экскурсию
+            </Button>
+            <CenteredModal
+              show={modalShow}
+              onHide={() => setModalShow(false)}
+            />
+          </div>
         </div>
         <h3 className="p-5 text-center">Экскурсии</h3>
         <ExcursionList />

@@ -1,5 +1,5 @@
-// import { Link, animateScroll as scroll } from 'react-scroll';
-import fon from '../images/fon.jpg';
+import logo from 'images/logo_1.png';
+import fon from '../images/fon2.webp';
 // import { Link } from 'react-router-dom';
 import { NavLink, Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
@@ -12,13 +12,10 @@ import { phoneIcon, mailIcon } from 'icons/svgIcon/svgIcons';
 const styles = {
   header: {
     alignItems: 'center',
-    height: 300,
+    height: 250,
     padding: 20,
-    backgroundImage: `linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url(${fon})`,
+    backgroundImage: `    
+    url(${fon})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     color: '#2A363B',
@@ -34,14 +31,8 @@ const MenuLink = styled(NavLink)`
 export default function Navigation() {
   return (
     <header style={styles.header}>
-      <Container fluid className="d-flex">
-        <Col className="d-none d-md-block text-white pt-4 px-5">
-          <Link to="/" className="text-white fs-1 fst-italic">
-            Виталий Орлович
-          </Link>
-          <p className="fst-italic">Частный гид в Бергене</p>
-        </Col>
-        <Col>
+      <Container className="d-flex align-items-center">
+        <Col className="d-flex justify-content-center">
           <Nav className="me-auto pt-4 fs-4 justify-content-end align-items-start">
             <MenuLink className="link-white" to="about">
               О себе
@@ -55,18 +46,26 @@ export default function Navigation() {
             <MenuLink to="contact" className="ms-3 link-white">
               Контакты
             </MenuLink>
-            <div>
-              <Nav.Link href="tel:+4796662700" className="ms-4 pt-0 link-white">
-                {phoneIcon} +4796662700
-              </Nav.Link>
-              <Nav.Link
-                href="mailto:vianorway.tour@gmail.com"
-                className="ms-4 link-white d-none d-md-block"
-              >
-                {mailIcon} vianorway.tour@gmail.com
-              </Nav.Link>
-            </div>
           </Nav>
+        </Col>
+        <Col md="auto d-flex align-items-center">
+          <Link to="/" className="">
+            <img src={logo} className="logo" alt="logo" />
+          </Link>
+        </Col>
+        <Col className="d-flex flex-column  align-items-end text-white pt-4 ">
+          <Nav.Link href="tel:+4796662700" className="ms-4 pt-0 link-white">
+            {phoneIcon} <p className="d-none d-md-inline fs-5">+4796662700</p>
+          </Nav.Link>
+          <Nav.Link
+            href="mailto:vianorway.tour@gmail.com"
+            className=" pt-3 link-white"
+          >
+            {mailIcon}
+            <p className="d-none d-md-inline ms-3 fs-5">
+              vianorway.tour@gmail.com
+            </p>
+          </Nav.Link>
         </Col>
       </Container>
     </header>

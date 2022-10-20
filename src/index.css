@@ -81,3 +81,14 @@ ul {
     justify-content: space-around;
   }
 }
+
+.logo {
+  width: 100px;
+  margin: 0 25px;
+}
+
+@media screen and (min-width: 751px) {
+  .logo {
+    width: 150px;
+  }
+}

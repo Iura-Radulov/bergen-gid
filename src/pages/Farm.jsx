@@ -5,13 +5,17 @@ import img3 from 'images/17-century-farm/17-century-farm3.jpg';
 import img4 from 'images/17-century-farm/17-century-farm4.jpg';
 import img5 from 'images/17-century-farm/17-century-farm5.jpg';
 // import Button from 'react-bootstrap/Button';
-import ControlledCarousel from 'components/Carousel';
+import ControlledCarousel from 'utils/Carousel';
 
 import {
   geoIcon,
   timeIcon,
   walletIcon,
   groupIcon,
+  pathCheckIcon,
+  xIcon,
+  bagIcon,
+  checkIcon,
 } from 'icons/svgIcon/svgIcons';
 
 const imgArray = [img1, img2, img3, img4, img5];
@@ -63,6 +67,35 @@ export default function Farm() {
           {groupIcon}
           <h3 className="py-4">Количество</h3>
           <p>До 4 человек</p>
+        </li>
+      </ul>
+      <ul className="excursion-atribute">
+        <li className="text-center">
+          {pathCheckIcon}
+          <h3 className="py-4">В стоимость входит</h3>
+          <ul className="d-flex flex-column align-items-start">
+            <li>{checkIcon}Встреча у отеля</li>
+            <li>{checkIcon} Персональный гид с автомобилем</li>
+            <li>{checkIcon}Посещение горной фермы Kjeåsen</li>
+            <li>{checkIcon}Посещение водопада Vøringsfossen</li>
+            <li>{checkIcon}Возвращение в отель</li>
+          </ul>
+        </li>
+        <li className="text-center">
+          {xIcon}
+          <h3 className="py-4">В стоимость не входит</h3>
+          <ul className="d-flex flex-column align-items-start">
+            <li>{checkIcon}Питание</li>
+            <li>{checkIcon}Сувениры</li>
+          </ul>
+        </li>
+        <li className="text-center">
+          {bagIcon}
+          <h3 className="py-4">Взять с собой</h3>
+          <ul className="d-flex flex-column align-items-start">
+            <li>{checkIcon} Подходящую для хайкинга одежду и обувь</li>
+            <li>{checkIcon}Хорошее настроение</li>
+          </ul>
         </li>
       </ul>
     </Container>
