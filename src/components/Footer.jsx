@@ -2,18 +2,16 @@ import { Link, NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import { telegramIcon, whatsappIcon, mailIcon } from 'icons/svgIcon/svgIcons';
 import Nav from 'react-bootstrap/Nav';
-import logo from 'images/logo_2.png';
+import logo from 'images/logo_1.png';
 
 export default function Footer() {
   return (
     <footer className="bg-secondary " style={{ height: 200 }}>
-      <Container className="d-flex pt-5 justify-content-around">
+      <Container className="d-flex pt-4 justify-content-around">
         <div>
           <Link to="/" className="link-white fs-3 fst-italic">
             <img className="logo" src={logo} alt="" />
           </Link>
-          <p className="fst-italic text-white mt-2">Частный гид</p>
-          <p className="fst-italic text-white mt-2">Берген, Норвегия</p>
         </div>
         <div className="d-none d-md-flex flex-column">
           <NavLink className="link-white" to="about">
