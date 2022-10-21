@@ -10,7 +10,7 @@ export default function ExcursionList() {
         <Link to="/farm">
           <img src={img1} style={{ width: 350 }} alt="image1" />
           <p style={{ width: 300 }} className="mt-2 link">
-            Kjeåsen(Козлиный холм). Ферма 17-го века и немного хайкинга
+            Козлиный холм(Kjeåsen). Ферма 17-го века и немного хайкинга
           </p>
         </Link>
       </li>

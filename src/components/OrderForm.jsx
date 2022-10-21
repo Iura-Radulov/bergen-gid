@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 
 export default function OrderForm() {
   return (
-    <Form>
+    <Form className="text-center">
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Control type="text" placeholder="Ваше имя" />
       </Form.Group>
@@ -20,11 +20,11 @@ export default function OrderForm() {
         <Form.Label>Предпологаемая дата поездки</Form.Label>
         <Form.Control type="date" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Я согласен" />
-      </Form.Group>
+      </Form.Group> */}
       <Button variant="primary" type="submit">
-        Отправить
+        Отправить заявку
       </Button>
     </Form>
   );

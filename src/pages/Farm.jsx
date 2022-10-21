@@ -17,6 +17,7 @@ import {
   bagIcon,
   checkIcon,
 } from 'icons/svgIcon/svgIcons';
+import OrderForm from 'components/OrderForm';
 
 const imgArray = [img1, img2, img3, img4, img5];
 
@@ -98,6 +99,12 @@ export default function Farm() {
           </ul>
         </li>
       </ul>
+      <div className="d-flex flex-column align-items-center py-5">
+        <h3 className="mb-2">Заказать экскурсию</h3>
+        <div style={{ width: 300, marginTop: 20 }}>
+          <OrderForm />
+        </div>
+      </div>
     </Container>
   );
 }
