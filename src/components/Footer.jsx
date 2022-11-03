@@ -14,16 +14,16 @@ export default function Footer() {
           </Link>
         </div>
         <div className="d-none d-md-flex flex-column">
-          <NavLink className="link-white" to="about">
+          <NavLink className="link-white" to="/about">
             О себе
           </NavLink>
-          <NavLink className="mt-2 link-white" to="excursion">
+          <NavLink className="mt-2 link-white" to="/excursion">
             Экскурсии
           </NavLink>
-          <NavLink className="mt-2 link-white" to="services">
+          <NavLink className="mt-2 link-white" to="/services">
             Услуги
           </NavLink>
-          <NavLink to="contact" className="mt-2 link-white">
+          <NavLink to="/contact" className="mt-2 link-white">
             Контакты
           </NavLink>
         </div>

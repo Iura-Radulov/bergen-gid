@@ -1,5 +1,5 @@
 import logo from 'images/logo_1.png';
-import fon from '../images/fon2.webp';
+// import fon from '../images/fon-3.jpg';
 // import { Link } from 'react-router-dom';
 import { NavLink, Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
@@ -12,19 +12,20 @@ import { phoneIcon, mailIcon } from 'icons/svgIcon/svgIcons';
 const styles = {
   header: {
     alignItems: 'center',
-    height: 250,
+    height: 180,
     padding: 20,
-    backgroundImage: `    
-    url(${fon})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
+    backgroundColor: '#00aeef',
+    // backgroundImage: `
+    // url(${fon})`,
+    // backgroundRepeat: 'no-repeat',
+    // backgroundSize: 'cover',
     color: '#2A363B',
   },
 };
 
 const MenuLink = styled(NavLink)`
   &.active {
-    color: #2196f3;
+    color: #d1314c;
   }
 `;
 

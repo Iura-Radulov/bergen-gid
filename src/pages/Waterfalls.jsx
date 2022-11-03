@@ -1,3 +1,3 @@
 export default function Waterfalls() {
-    return <div>waterfalls</div>;
+  return <div>waterfalls</div>;
 }
