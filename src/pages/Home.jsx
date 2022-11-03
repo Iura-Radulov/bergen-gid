@@ -1,9 +1,9 @@
-import Container from 'react-bootstrap/Container';
+// import Container from 'react-bootstrap/Container';
 import fon from '../images/fon-4.jpg';
 
 // import fon2 from 'images/aerial-view.webp';
-import ExcursionList from 'components/ExcursionList';
-import ServicesList from 'components/ServicesList';
+// import ExcursionList from 'components/ExcursionList';
+// import ServicesList from 'components/ServicesList';
 import Button from 'react-bootstrap/Button';
 import CenteredModal from 'utils/modal';
 import { useState } from 'react';
