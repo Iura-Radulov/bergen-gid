@@ -30,26 +30,33 @@ export default function Farm() {
           Козлиный холм(Kjeåsen). Ферма 17-го века и немного хайкинга
         </h2>
         <ControlledCarousel imgProp={imgArray} />
-        <div className="d-flex justify-content-center py-5">
-          <h3 className=" w-75 lh-base">
+        <div className="d-flex flex-column align-items-center py-5">
+          <h4 className=" w-75 lh-base mb-4">
             Мы все знаем, кто такие норвежские викинги и насколько круты они
             были. Но мало кто знает, что средневековые норвежские фермеры
             нисколько не отставали по крутости от викингов. И в этом вы сможете
             убедиться, посетив одну небольшую ферму, которая находится на краю
             практически отвесной скалы на высоте 550-ти метров над фьордом.
-            <br />А при наличии минимальной физ.подготовки и отсутствии страха
-            высоты, вы сможете сами, своими ногами, преодолеть весь путь,
-            который норвежские фермеры преодолевали, чтобы добраться домой.
-            Прогулка займёт каких-то 1,5 — 2 часа. Но она станет одной из самых
+          </h4>
+          <h4 className=" w-75 lh-base mb-4">
+            А при наличии минимальной физ.подготовки и отсутствии страха высоты,
+            вы сможете сами, своими ногами, преодолеть весь путь, который
+            норвежские фермеры преодолевали, чтобы добраться домой. Прогулка
+            займёт каких-то 1,5 — 2 часа. Но она станет одной из самых
             увлекательных прогулок в вашей жизни. Если же вам лень и нехочется
             никуда идти, то мы доедем на автомобиле прямо до самой фермы и там я
             вам немного расскажу о её истории. А так же в этой поездке вас ждёт
             бонус - самый посещаемый и один из красивейших водопадов Норвегии
             Vøringsfossen.
-          </h3>
+          </h4>
+          <h4 className=" w-75 lh-base mb-4">
+            Если же вам лень и нехочется никуда идти, то мы доедем на автомобиле
+            прямо до самой фермы и там я вам немного расскажу о её истории. А
+            так же в этой поездке вас ждёт бонус - самый посещаемый и один из
+            красивейших водопадов Норвегии Vøringsfossen.
+          </h4>
         </div>
 
-        {/* <img src={img1} className="w-100" alt="farm" /> */}
         <ul className="excursion-atribute">
           <li className="text-center">
             {geoIcon}
@@ -70,6 +77,7 @@ export default function Farm() {
             {groupIcon}
             <h3 className="py-4">Количество</h3>
             <p>До 4 человек</p>
+            <p>(2 взрослых и 2 детей либо 3 взрослых)</p>
           </li>
         </ul>
         <ul className="excursion-atribute">
@@ -77,10 +85,16 @@ export default function Farm() {
             {pathCheckIcon}
             <h3 className="py-4">В стоимость входит</h3>
             <ul className="d-flex flex-column align-items-start">
-              <li>{checkIcon}Встреча у отеля</li>
-              <li>{checkIcon} Персональный гид с автомобилем</li>
-              <li>{checkIcon}Посещение горной фермы Kjeåsen</li>
-              <li>{checkIcon}Посещение водопада Vøringsfossen</li>
+              <li className="mb-2">{checkIcon}Встреча у отеля</li>
+              <li className="mb-2">
+                {checkIcon} Персональный гид с автомобилем
+              </li>
+              <li className="mb-2">
+                {checkIcon}Посещение горной фермы Kjeåsen
+              </li>
+              <li className="mb-2">
+                {checkIcon}Посещение водопада Vøringsfossen
+              </li>
               <li>{checkIcon}Возвращение в отель</li>
             </ul>
           </li>
@@ -88,7 +102,7 @@ export default function Farm() {
             {xIcon}
             <h3 className="py-4">В стоимость не входит</h3>
             <ul className="d-flex flex-column align-items-start">
-              <li>{checkIcon}Питание</li>
+              <li className="mb-2">{checkIcon}Питание</li>
               <li>{checkIcon}Сувениры</li>
             </ul>
           </li>
@@ -96,7 +110,9 @@ export default function Farm() {
             {bagIcon}
             <h3 className="py-4">Взять с собой</h3>
             <ul className="d-flex flex-column align-items-start">
-              <li>{checkIcon} Подходящую для хайкинга одежду и обувь</li>
+              <li className="mb-2">
+                {checkIcon} Подходящую для хайкинга одежду и обувь
+              </li>
               <li>{checkIcon}Хорошее настроение</li>
             </ul>
           </li>

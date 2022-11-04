@@ -17,8 +17,8 @@ export default function Home() {
         backgroundImage: `
           linear-gradient(
       to right,
-      rgba(47, 48, 58, 0.3),
-      rgba(47, 48, 58, 0.3)
+      rgba(47, 48, 58, 0.2),
+      rgba(47, 48, 58, 0.2)
     ),
     url(${fon})`,
         backgroundRepeat: 'no-repeat',
