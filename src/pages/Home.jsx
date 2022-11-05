@@ -24,7 +24,7 @@ export default function Home() {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
 
-        height: 'calc(100vh - 180px)',
+        height: 'calc(100vh - 160px)',
         position: 'relative',
       }}
     >
@@ -32,8 +32,7 @@ export default function Home() {
         Вы когда-нибудь бывали в сказке? Нет? А хотите? Тогда приезжайте к нам в
         Норвегию! А именно – в Берген. Город всемирного наследия. Город-ворота
         норвежских фьордов. Отсюда, из Бергена и начинаются все наши экскурсии в
-        мир фантастической норвежской природы. Мы покажем вам настоящую
-        Норвегию!!!
+        мир фантастической норвежской природы.
       </h3>
       <p className="d-block d-md-none  fs-4 d-lg-fs-3 text-center text-white position-absolute top-50 start-50 translate-middle w-75">
         Вы когда-нибудь бывали в сказке? Нет? А хотите? Тогда приезжайте к нам в

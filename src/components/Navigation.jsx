@@ -12,8 +12,8 @@ import { phoneIcon, mailIcon } from 'icons/svgIcon/svgIcons';
 const styles = {
   header: {
     alignItems: 'center',
-    height: 180,
-    padding: 20,
+    height: 160,
+    paddingBottom: 20,
     backgroundColor: '#00aeef',
     // backgroundImage: `
     // url(${fon})`,

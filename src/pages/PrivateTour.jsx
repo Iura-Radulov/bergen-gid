@@ -44,13 +44,15 @@ export default function PrivateTour() {
       <ul className="excursion-atribute">
         <li className="text-center">
           {geoIcon}
-          <h3 className="py-4">Место встречи</h3>
-          <p>Ваш отель</p>
+          <h3 className="py-4">Программа</h3>
+          <p className="mb-2">Встреча у отеля</p>
+          <p className="mb-2">Экскурсия по индивидуальной программе</p>
+          <p>Возвращение в отель</p>
         </li>
         <li className="text-center">
           {timeIcon}
           <h3 className="py-4">Время</h3>
-          <p>Продолжительность — 6-12 часов</p>
+          <p>6-12 часов</p>
         </li>
         <li className="text-center">
           {walletIcon}
@@ -69,7 +71,6 @@ export default function PrivateTour() {
           {pathCheckIcon}
           <h3 className="py-4">В стоимость входит</h3>
           <ul className="d-flex flex-column align-items-start">
-            <li className="mb-2">{checkIcon}Встреча у отеля</li>
             <li className="mb-2">{checkIcon} Автомобиль с водителем</li>
             <li className="mb-2">{checkIcon}Топливо</li>
             <li className="mb-2">{checkIcon}Платные дороги</li>

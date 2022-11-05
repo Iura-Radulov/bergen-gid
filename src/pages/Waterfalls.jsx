@@ -47,13 +47,16 @@ export default function Waterfalls() {
       <ul className="excursion-atribute">
         <li className="text-center">
           {geoIcon}
-          <h3 className="py-4">Место встречи</h3>
-          <p>Ваш отель</p>
+          <h3 className="py-4">Программа</h3>
+          <p className="mb-2">Встреча у отеля</p>
+          <p className="mb-2">Посещение водопадов</p>
+          <p className="mb-2">Посещение фьорд</p>
+          <p>Возвращение в отель</p>
         </li>
         <li className="text-center">
           {timeIcon}
           <h3 className="py-4">Время</h3>
-          <p>Продолжительность — 10-12 часов</p>
+          <p>10-12 часов</p>
         </li>
         <li className="text-center">
           {walletIcon}
@@ -68,21 +71,21 @@ export default function Waterfalls() {
         </li>
       </ul>
       <ul className="excursion-atribute">
-        <li className="d-flex flex-column align-items-center w-50">
+        <li className="text-center">
           {pathCheckIcon}
           <h3 className="py-4">В стоимость входит</h3>
           <ul className="d-flex flex-column align-items-start">
-            <li className="mb-2">{checkIcon}Встреча у отеля</li>
             <li className="mb-2">{checkIcon} Персональный гид с автомобилем</li>
-            <li className="mb-2">
-              {checkIcon}Посещение 5-ти водопадов: Fossen bratte
-              ,Steindalsfossen ,Tjørnadalsfossen ,Låtefossen ,Langfoss
+            <li className="mb-2 ">
+              {checkIcon}Посещение 5-ти водопадов: <br />
+              Fossen bratte ,Steindalsfossen, <br />
+              Tjørnadalsfossen ,Låtefossen ,Langfoss
             </li>
             <li className="mb-2">
-              {checkIcon}Фьорды: Hardangerfjord ,Eidfjord ,Bomlafjord (подводный
-              туннель) ,Bjornafjord (паром)
+              {checkIcon}Фьорды: Hardangerfjord, Eidfjord, <br />
+              Bomlafjord (подводный туннель), <br />
+              Bjornafjord (паром)
             </li>
-            <li>{checkIcon}Возвращение в отель</li>
           </ul>
         </li>
         <li className="text-center">
@@ -93,7 +96,7 @@ export default function Waterfalls() {
             <li>{checkIcon}Сувениры</li>
           </ul>
         </li>
-        <li className="d-flex flex-column align-items-center">
+        <li className="text-center">
           {bagIcon}
           <h3 className="py-4">Взять с собой</h3>
           <ul className="d-flex flex-column align-items-start">
