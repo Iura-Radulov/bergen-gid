@@ -26,84 +26,20 @@ export const App = () => {
       <Suspense fallback={<h1>Loading...</h1>}>
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route
-            path="/about"
-            element={
-              <>
-                <About />
-                <Footer />
-              </>
-            }
-          />
-          <Route
-            path="/excursion"
-            element={
-              <>
-                <Excursion />
-                <Footer />
-              </>
-            }
-          />
-          <Route
-            path="/private-tour"
-            element={
-              <>
-                <PrivateTour />
-                <Footer />
-              </>
-            }
-          />
-          <Route
-            path="/farm"
-            element={
-              <>
-                <Farm />
-                <Footer />
-              </>
-            }
-          />
-          <Route
-            path="/waterfalls"
-            element={
-              <>
-                <Waterfalls />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/about" element={<About />} />
+          <Route path="/excursion" element={<Excursion />} />
+          <Route path="/private-tour" element={<PrivateTour />} />
+          <Route path="/farm" element={<Farm />} />
+          <Route path="/waterfalls" element={<Waterfalls />} />
 
-          <Route
-            path="/services"
-            element={
-              <>
-                <Services />
-                <Footer />
-              </>
-            }
-          />
-          <Route
-            path="/transfer"
-            element={
-              <>
-                <Transfer />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/services" element={<Services />} />
+          <Route path="/transfer" element={<Transfer />} />
 
-          <Route
-            path="/contact"
-            element={
-              <>
-                <Contact />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </Suspense>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
