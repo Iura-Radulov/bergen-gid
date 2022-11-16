@@ -39,15 +39,28 @@ ul {
 }
 
 .link:hover {
-  color: #0a58ca;
+  color: #e4a36f;
 }
 
+.link-header {
+  color: white;
+}
+
+.link-header:hover {
+  color: #e4a36f;
+}
 .link-white {
   color: white;
 }
 
 .link-white:hover {
   color: #e4a36f;
+}
+
+@media screen and (max-width: 767px) {
+  .link-header {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -89,10 +102,23 @@ ul {
 
 @media screen and (min-width: 751px) {
   .logo {
-    width: 150px;
+    width: 120px;
   }
 }
 
 .some {
   color: #d1314c;
+}
+
+.order-button {
+  bottom: 20px;
+}
+
+@media screen and (min-width: 751px) {
+  .order-button {
+    bottom: 60px;
+  }
+}
+.fgkll {
+  color: #ebba92;
 }

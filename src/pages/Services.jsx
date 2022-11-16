@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import Container from 'react-bootstrap/Container';
 import imgService from 'images/transfer.jpg';
-import OrderForm from 'components/OrderForm';
+import OrderExcursion from 'components/OrderExcursion';
 import { geoIcon, walletIcon, groupIcon } from 'icons/svgIcon/svgIcons';
 
 export default function Services() {
@@ -51,14 +51,9 @@ export default function Services() {
               <p>(2 взрослых и 2 детей либо 3 взрослых)</p>
             </li>
           </ul>
-          <div className="d-flex flex-column align-items-center py-5">
-            <h3 className="mb-2">Заказать услугу</h3>
-            <div style={{ width: 300, marginTop: 20 }}>
-              <OrderForm />
-            </div>
-          </div>
         </Suspense>
       </Container>
+      <OrderExcursion />
     </div>
   );
 }

@@ -6,7 +6,7 @@ import logo from 'images/logo_1.png';
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary " style={{ height: 200 }}>
+    <footer className="bg-secondary " style={{ height: 160 }}>
       <Container className="d-flex pt-4 justify-content-around">
         <div>
           <Link to="/" className="link-white fs-3 fst-italic">
@@ -30,19 +30,21 @@ export default function Footer() {
         <div>
           <Nav.Link
             href="tel:+4796662700"
-            className="ms-4 fs-4 pt-0 link-white"
+            className="ms-4 fs-5 pt-0 link-white"
           >
-            {telegramIcon} +4796662700
+            {telegramIcon}
+            <span className="d-none d-sm-inline-block mx-2">+4796662700</span>
           </Nav.Link>
           <Nav.Link
             href="tel:+4796662700"
-            className="ms-4 fs-4 pt-0 link-white mt-2"
+            className="ms-4 fs-5 pt-0 link-white mt-2"
           >
-            {whatsappIcon} +4796662700
+            {whatsappIcon}
+            <span className="d-none d-sm-inline-block mx-2">+4796662700</span>
           </Nav.Link>
           <Nav.Link
             href="mailto:vianorway.tour@gmail.com"
-            className="ms-4 fs-4 mt-2 link-white d-none d-md-block"
+            className="ms-4 fs-5 mt-2 link-white d-none d-md-block"
           >
             {mailIcon} vianorway.tour@gmail.com
           </Nav.Link>

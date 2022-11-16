@@ -6,7 +6,7 @@ export default function CenteredModal(props) {
   return (
     <Modal
       {...props}
-      size="lg"
+      size="md"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
@@ -18,26 +18,6 @@ export default function CenteredModal(props) {
       <Modal.Body>
         <OrderForm />
       </Modal.Body>
-      {/* <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer> */}
     </Modal>
   );
 }
-
-// function App() {
-//   const [modalShow, setModalShow] = React.useState(false);
-
-//   return (
-//     <>
-//       <Button variant="primary" onClick={() => setModalShow(true)}>
-//         Launch vertically centered modal
-//       </Button>
-
-//       <MyVerticallyCenteredModal
-//         show={modalShow}
-//         onHide={() => setModalShow(false)}
-//       />
-//     </>
-//   );
-// }

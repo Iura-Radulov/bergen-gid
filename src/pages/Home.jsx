@@ -24,7 +24,7 @@ export default function Home() {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
 
-        height: 'calc(100vh - 160px)',
+        height: 'calc(100vh - 150px)',
         position: 'relative',
       }}
     >
@@ -43,8 +43,7 @@ export default function Home() {
           variant="primary"
           size="lg"
           active
-          className="position-absolute start-50 translate-middle"
-          style={{ bottom: 80 }}
+          className="order-button position-absolute start-50 translate-middle"
           onClick={() => setModalShow(true)}
         >
           Заказать экскурсию

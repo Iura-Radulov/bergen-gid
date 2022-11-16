@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import { Img } from './ControlledCarousel.styled';
 
 export default function ControlledCarousel({ imgProp }) {
   const [index, setIndex] = useState(0);
@@ -9,10 +10,10 @@ export default function ControlledCarousel({ imgProp }) {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel activeIndex={index} onSelect={handleSelect} variant="dark">
       {imgProp.map(img => (
         <Carousel.Item>
-          <img className="d-block w-100" src={img} alt="First slide" />
+          <Img className="d-block mx-auto" src={img} alt="First slide" />
         </Carousel.Item>
       ))}
     </Carousel>

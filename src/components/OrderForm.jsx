@@ -41,7 +41,7 @@ export default function OrderForm() {
         />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Предпологаемая дата поездки</Form.Label>
+        <Form.Label class="text-info">Предпологаемая дата поездки</Form.Label>
         <Form.Control type="date" name="date" />
       </Form.Group>
       {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">

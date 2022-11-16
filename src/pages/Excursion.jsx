@@ -1,5 +1,5 @@
 import Container from 'react-bootstrap/Container';
-import ExcursionList from 'components/ExcursionList';
+import ExcursionList from 'components/ExcursionList/ExcursionList';
 import { Suspense } from 'react';
 
 export default function Excursion() {

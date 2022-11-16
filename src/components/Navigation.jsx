@@ -12,13 +12,9 @@ import { phoneIcon, mailIcon } from 'icons/svgIcon/svgIcons';
 const styles = {
   header: {
     alignItems: 'center',
-    height: 160,
+    height: 150,
     paddingBottom: 20,
     backgroundColor: '#00aeef',
-    // backgroundImage: `
-    // url(${fon})`,
-    // backgroundRepeat: 'no-repeat',
-    // backgroundSize: 'cover',
     color: '#2A363B',
   },
 };
@@ -35,16 +31,16 @@ export default function Navigation() {
       <Container className="d-flex align-items-center">
         <Col className="d-flex justify-content-center">
           <Nav className="me-auto pt-4 fs-4 justify-content-end align-items-start">
-            <MenuLink className="link-white" to="about">
+            <MenuLink className="link-header" to="about">
               О себе
             </MenuLink>
-            <MenuLink className="ms-3 link-white" to="excursion">
+            <MenuLink className="ms-3 link-header" to="excursion">
               Экскурсии
             </MenuLink>
-            <MenuLink className="ms-3 link-white" to="services">
+            <MenuLink className="ms-3 link-header" to="services">
               Услуги
             </MenuLink>
-            <MenuLink to="contact" className="ms-3 link-white">
+            <MenuLink to="contact" className="ms-3 link-header">
               Контакты
             </MenuLink>
           </Nav>
