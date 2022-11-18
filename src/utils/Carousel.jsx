@@ -10,7 +10,7 @@ export default function ControlledCarousel({ imgProp }) {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} variant="dark">
+    <Carousel activeIndex={index} onSelect={handleSelect}>
       {imgProp.map(img => (
         <Carousel.Item>
           <Img className="d-block mx-auto" src={img} alt="First slide" />

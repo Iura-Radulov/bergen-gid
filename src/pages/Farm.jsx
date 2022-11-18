@@ -26,7 +26,7 @@ export default function Farm() {
   return (
     <>
       <Container>
-        <h2 className="text-center py-3">
+        <h2 className="text-center py-4">
           Козлиный холм(Kjeåsen). Ферма 17-го века и немного хайкинга
         </h2>
         <ControlledCarousel imgProp={imgArray} />

@@ -9,7 +9,7 @@ export const Img = styled.img`
     height: 400px;
   }
   @media (min-width: 1280px) {
-    width: 1000px;
-    height: 700px;
+    width: 1200px;
+    height: 600px;
   }
 `;

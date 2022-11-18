@@ -26,7 +26,7 @@ export default function PrivateTour() {
   return (
     <>
       <Container>
-        <h2 className="text-center py-3">Индивидуальная экскурсия</h2>
+        <h2 className="text-center py-4">Индивидуальная экскурсия</h2>
         <ControlledCarousel imgProp={imgArray} />
         <div className="d-flex flex-column align-items-center py-5">
           <h4 className=" w-75 lh-base mb-4">

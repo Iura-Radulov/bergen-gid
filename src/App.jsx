@@ -6,7 +6,7 @@ import About from './pages/About';
 
 import Navigation from './components/Navigation';
 import Excursion from 'pages/Excursion';
-import Contact from 'pages/Contact';
+import Contact from 'pages/Contact/Contact';
 import PrivateTour from 'pages/PrivateTour';
 import Services from 'pages/Services';
 import Transfer from 'pages/Transfer';

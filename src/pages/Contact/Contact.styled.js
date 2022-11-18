@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
-import fon from 'images/Private-tour/Private-tour4.jpg';
-
-export const Container = styled.div`
+import fon from 'images/contacts-fon.jpeg';
+export const Div = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,12 +15,7 @@ export const Container = styled.div`
   background-size: cover;
 `;
 
-export const Title = styled.h3`
-  margin-bottom: 15px;
-  color: white;
-`;
-
-export const Div = styled.div`
+export const FormContainer = styled.div`
   width: 300px;
   margin-top: 20px;
 `;
