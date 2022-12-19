@@ -13,6 +13,7 @@ import Transfer from 'pages/Transfer';
 import Farm from 'pages/Farm';
 import Waterfalls from 'pages/Waterfalls';
 import Footer from 'components/Footer';
+import Trolltunga from 'pages/Trolltunga';
 
 export const App = () => {
   return (
@@ -31,7 +32,7 @@ export const App = () => {
           <Route path="/private-tour" element={<PrivateTour />} />
           <Route path="/farm" element={<Farm />} />
           <Route path="/waterfalls" element={<Waterfalls />} />
-
+          <Route path="/trolltunga" element={<Trolltunga />} />
           <Route path="/services" element={<Services />} />
           <Route path="/transfer" element={<Transfer />} />
 
