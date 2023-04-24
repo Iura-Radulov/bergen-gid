@@ -1,1 +1,1 @@
-# bergen-gid
+# chat-example
